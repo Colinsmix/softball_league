@@ -10,6 +10,8 @@ GEM
       erubis (~> 2.7.0)
       rack (~> 1.5.2)
       rack-test (~> 0.6.2)
+    active_model_serializers (0.8.1)
+      activemodel (>= 3.0)
     activemodel (4.0.2)
       activesupport (= 4.0.2)
       builder (~> 3.1.0)
@@ -27,6 +29,10 @@ GEM
       tzinfo (~> 0.3.37)
     arel (4.0.2)
     atomic (1.1.14)
+    barber (0.4.2)
+      ember-source
+      execjs
+      handlebars-source
     builder (3.1.4)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -35,8 +41,27 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
+    ember-appkit-rails (0.3.1)
+      active_model_serializers
+      barber (>= 0.4.1)
+      ember-data-source (~> 1.0.0.beta.3)
+      ember-source (~> 1.2.0.1)
+      es6_module_transpiler-rails (~> 0.3.0)
+      handlebars-source
+      jquery-rails
+      rails (~> 4.0.0)
+    ember-data-source (1.0.0.beta.4)
+      ember-source
+    ember-source (1.2.0.1)
+      handlebars-source (~> 1.1.2)
     erubis (2.7.0)
+    es6_module_transpiler-rails (0.3.0)
+      execjs
     execjs (2.0.2)
+    foundation-rails (5.0.2.0)
+      railties (>= 3.1.0)
+      sass (>= 3.2.0)
+    handlebars-source (1.1.2)
     hike (1.2.3)
     i18n (0.6.9)
     jbuilder (1.5.3)
@@ -109,6 +134,8 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  ember-appkit-rails
+  foundation-rails
   jbuilder (~> 1.2)
   jquery-rails
   pg
