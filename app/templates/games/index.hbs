@@ -1,0 +1,22 @@
+<h3>Index</h3>
+
+<p>{{link-to 'New game' 'games.new'}}</p>
+
+<table>
+  <tr>
+    <th>id</th>
+    <th>Hteam Score</th>
+    <th>Ateam Score</th>
+    <th>Hteam</th>
+    <th>Ateam</th>
+  </tr>
+  {{#each}}
+    <tr>
+      <td>{{link-to id 'games.show' this}}</td>
+      <td>{{hteam_score}}</td>
+      <td>{{ateam_score}}</td>
+      <td>{{hteam_id}}</td>
+      <td>{{ateam_id}}</td>
+    </tr>
+  {{/each}}
+</table>
